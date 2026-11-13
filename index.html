@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pranjali Singh | Research Scholar - Computer Vision</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Official personal academic portfolio of Pranjali Singh. Research scholar specializing in Computer Vision. Discover publications and education background.">
+  <meta name="keywords"
+    content="Pranjali Singh, Computer Vision, Artificial Intelligence, Underwater Image Enhancement">
+  <meta name="author" content="Pranjali Singh">
+
+  <!-- Open Graph / Social Media Meta -->
+  <meta property="og:title" content="Pranjali Singh | Research Scholar - Computer Vision">
+  <meta property="og:description"
+    content="Personal academic website containing research publications, education background, and projects in AI & Vision.">
+  <meta property="og:type" content="website">
+
+  <!-- FontAwesome Icons & Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Schema.org Person Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Pranjali Singh",
+    "jobTitle": "Research Scholar",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Indian Institute of Technology Guwahati"
+    },
+    "almaMater": "NIT Jalandhar",
+    "sameAs": [
+      "https://scholar.google.com",
+      "https://github.com",
+      "https://linkedin.com"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Generative Particle Canvas Background -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">
+        <span class="logo-dot"></span> Pranjali Singh
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#publications" class="nav-link">Publications</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications & Activities</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+          <i class="fas fa-sun"></i>
+        </button>
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open navigation menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-pulse"></span> Open for Research Collaboration
+          </div>
+          <h1 class="hero-title">
+            Advancing <span class="gradient-text">Underwater Image Enhancement</span> & Computer Vision
+          </h1>
+          <p class="hero-subtitle">
+            <i class="fas fa-microchip"></i> Research Scholar @ AR/VR Lab, CICPS, IIT Guwahati
+          </p>
+          <p class="hero-bio">
+            I’m Pranjali Singh, a Research Scholar at IIT Guwahati, working at the intersection of Computer Vision, Deep
+            Learning, and Intelligent Image Processing. My research focuses on underwater image enhancement, where
+            I develop robust enhancement techniques using Transformers, Deep CNNs, and Mamba-based architectures to
+            improve visual quality and restore information in challenging underwater environments.<br>
+            My work aims to bridge advanced AI research with practical computer vision applications, with research
+            contributions published in reputed international journals and conferences.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#publications" class="btn btn-primary">
+              <i class="fas fa-book-open"></i> Explore Publications
+            </a>
+            <a href="assets/PS_CV.pdf" class="btn btn-secondary" target="_blank" download>
+              <i class="fas fa-file-download"></i> Download CV
+            </a>
+          </div>
+
+          <!-- Quick Stats Bar -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">6+</span>
+              <span class="stat-label">Publications</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">14+</span>
+              <span class="stat-label">Citations</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">2</span>
+              <span class="stat-label">h-index</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-avatar-wrapper">
+          <div class="avatar-frame tilt-card">
+            <div class="avatar-glow"></div>
+            <img src="assets/images/profile.jpeg" alt="Pranjali Singh Portrait" class="avatar-img">
+
+            <!-- <div class="floating-tag">
+              <div class="tag-icon">
+                <i class="fas fa-award"></i>
+              </div>
+              <div class="tag-text">
+                <span class="tag-title">CVPR Oral Author</span>
+                <span class="tag-subtitle">Best Paper Finalist</span>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Background & Focus</span>
+        <h2 class="section-title">About My Research</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="glass-card tilt-card">
+          <h3 class="card-title">
+            <i class="fas fa-user-astronaut card-icon"></i> Research Philosophy
+          </h3>
+          <div class="about-text">
+            <p>
+              My research focuses on developing efficient and intelligent deep learning techniques for underwater image
+              enhancement, addressing challenges such as color distortion, haze, low contrast, and image degradation. I
+              aim to design robust architectures that balance image quality and computational efficiency for practical
+              underwater imaging applications.
+            </p>
+            <p>
+              My work includes DARE-UI, a degradation-aware framework incorporating classification and adaptive
+              enhancement, and MSTR-Net, a multi-stage Transformer-based architecture for efficient feature extraction
+              and image restoration. Currently, I am exploring DeltaNet-inspired Transformer architectures, focusing on
+              efficient attention mechanisms and gated feature interactions.
+            </p>
+          </div>
+
+          <div class="interests-tags">
+            <span class="interest-tag">Image Enhancement</span>
+            <span class="interest-tag">Linearized Attention Mechanism</span>
+            <span class="interest-tag">Transformers</span>
+            <span class="interest-tag">Gated Delta Net</span>
+            <span class="interest-tag">Large Language Models</span>
+          </div>
+        </div>
+
+        <div class="glass-card tilt-card">
+          <h3 class="card-title">
+            <i class="fas fa-laptop-code card-icon"></i> Core Competencies
+          </h3>
+
+          <!-- <div class="skills-group">
+            <div class="skills-group-title">Frameworks & Libraries</div>
+            <div class="skill-pills">
+              <span class="skill-pill">PyTorch</span>
+              <span class="skill-pill">Java</span>
+              <span class="skill-pill">JAX / Flax</span>
+              <span class="skill-pill">TensorRT</span>
+              <span class="skill-pill">OpenCV</span>
+            </div>
+          </div> -->
+
+          <div class="skills-group">
+            <div class="skills-group-title">Specialized Domains</div>
+            <div class="skill-pills">
+              <span class="skill-pill">Computer Vision</span>
+              <span class="skill-pill">Machine Learning</span>
+              <span class="skill-pill">Deep Learning</span>
+              <span class="skill-pill">Large Language Models</span>
+              <span class="skill-pill">Data Structure & Algorithms</span>
+              <span class="skill-pill">Operating Systems</span>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <div class="skills-group-title">Languages & Tools</div>
+            <div class="skill-pills">
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">Java</span>
+              <span class="skill-pill">Latex</span>
+              <span class="skill-pill">Git</span>
+              <span class="skill-pill">SQL</span>
+              <span class="skill-pill">Java Frameworks</span>
+              <span class="skill-pill">Html/CSS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Academic Milestones</span>
+        <h2 class="section-title">Education Background</h2>
+      </div>
+
+      <div class="timeline">
+        <!-- PhD Degree -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3 class="timeline-degree">Ph.D. in Computer Vision</h3>
+              <span class="timeline-year">2022 – continuing</span>
+            </div>
+            <div class="timeline-institution">Indian Institute of Technology Guwahati</div>
+            <div class="timeline-details">
+              <strong>Thesis:</strong> <em>Exploration of Deep Neural Network in Underwater Image Enhancement</em><br>
+              <strong>Supervisor:</strong> Prof. Prithwijit Guha<br>
+            </div>
+            <!-- <div class="timeline-honors">
+              <span class="honor-tag"><i class="fas fa-medal"></i> Outstanding Dissertation Award</span>
+              <span class="honor-tag"><i class="fas fa-award"></i> NSF Graduate Research Fellow</span>
+            </div> -->
+          </div>
+        </div>
+
+        <!-- Master Degree -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3 class="timeline-degree">M.Tech. in Computer Science & Engineering</h3>
+              <span class="timeline-year">2019 – 2021</span>
+            </div>
+            <div class="timeline-institution">Dr. B.R. Ambedkar National Institute of Technology, Jalandhar</div>
+            <div class="timeline-details">
+              <strong>Thesis:</strong> <em>Unmasking the Masked Face using Zero shot Learning</em><br>
+              <strong>Supervisor:</strong> Dr. Amritpal Singh<br>
+            </div>
+            <!-- <div class="timeline-honors">
+              <span class="honor-tag"><i class="fas fa-star"></i> Graduate Fellowship Scholar</span>
+            </div> -->
+          </div>
+        </div>
+
+        <!-- Bachelor Degree -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3 class="timeline-degree">B.Tech. in Computer Science & Engineering</h3>
+              <span class="timeline-year">2012 – 2016</span>
+            </div>
+            <div class="timeline-institution">Pranveer Singh Institute of Technology, Kanpur</div>
+            <!-- <div class="timeline-details">
+              Rigorous coursework in algorithms, computer architecture, signal processing, and numerical linear algebra.
+            </div>
+            <div class="timeline-honors">
+              <span class="honor-tag"><i class="fas fa-trophy"></i> Department Valedictorian Finalist</span>
+              <span class="honor-tag"><i class="fas fa-certificate"></i> Regent's & Chancellor's Scholar</span>
+            </div> -->
+          </div>
+        </div>
+
+        <!-- 12th std -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3 class="timeline-degree">12th standard</h3>
+              <span class="timeline-year">2010 – 2012</span>
+            </div>
+            <div class="timeline-institution">Mittal International School, Kota</div>
+            <!-- <div class="timeline-details">
+              Rigorous coursework in algorithms, computer architecture, signal processing, and numerical linear algebra.
+            </div>
+            <div class="timeline-honors">
+              <span class="honor-tag"><i class="fas fa-trophy"></i> Department Valedictorian Finalist</span>
+              <span class="honor-tag"><i class="fas fa-certificate"></i> Regent's & Chancellor's Scholar</span>
+            </div> -->
+          </div>
+        </div>
+
+        <!-- 10th std -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3 class="timeline-degree">10th standard</h3>
+              <span class="timeline-year">2010</span>
+            </div>
+            <div class="timeline-institution">Deoria senior secondary school, Deoria</div>
+            <!-- <div class="timeline-details">
+              Rigorous coursework in algorithms, computer architecture, signal processing, and numerical linear algebra.
+            </div>
+            <div class="timeline-honors">
+              <span class="honor-tag"><i class="fas fa-trophy"></i> Department Valedictorian Finalist</span>
+              <span class="honor-tag"><i class="fas fa-certificate"></i> Regent's & Chancellor's Scholar</span>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications Section -->
+  <section id="publications" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Journals and Conferences</span>
+        <h2 class="section-title">Publications</h2>
+      </div>
+
+      <div class="pub-controls">
+        <div class="pub-search-wrapper">
+          <i class="fas fa-search pub-search-icon"></i>
+          <input type="text" id="pub-search" class="pub-search-input"
+            placeholder="Search papers by title, author, venue, or keyword...">
+        </div>
+
+        <!-- <div class="pub-filters">
+          <button class="filter-btn active" data-filter="all">All Papers</button>
+          <button class="filter-btn" data-filter="vision">Computer Vision</button>
+          <button class="filter-btn" data-filter="ml">Machine Learning</button>
+          <button class="filter-btn" data-filter="systems">Systems & Hardware</button>
+        </div> -->
+      </div>
+
+      <!-- Publication Items Container rendered via script.js -->
+      <div class="pub-list" id="pub-list-container">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications & Activities Section -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Training, Workshops & Campus Engagement</span>
+        <h2 class="section-title">Certifications & Activities</h2>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="activity-filters">
+        <button class="activity-filter-btn active" data-filter="all">
+          <i class="fas fa-th-large"></i> All <span class="filter-count">14</span>
+        </button>
+        <button class="activity-filter-btn" data-filter="certifications">
+          <i class="fas fa-certificate"></i> Certifications & Training <span class="filter-count">8</span>
+        </button>
+        <button class="activity-filter-btn" data-filter="workshops">
+          <i class="fas fa-laptop-code"></i> Workshops <span class="filter-count">3</span>
+        </button>
+        <button class="activity-filter-btn" data-filter="activities">
+          <i class="fas fa-hands-helping"></i> Activities & Volunteering <span class="filter-count">3</span>
+        </button>
+      </div>
+
+      <!-- Activity Cards Grid -->
+      <div class="activity-grid" id="activity-grid">
+        <!-- 1. EEE Badminton League -->
+        <div class="glass-card tilt-card activity-card" data-category="activities">
+          <div class="activity-card-header">
+            <div class="activity-icon-box activity-icon-activity">
+              <i class="fas fa-medal"></i>
+            </div>
+            <div class="activity-badges">
+              <span class="activity-type-badge badge-activity">Sports Activity</span>
+              <span class="activity-date-badge"><i class="far fa-calendar-alt"></i> Apr 2024</span>
+            </div>
+          </div>
+          <div class="activity-card-body">
+            <h3 class="activity-title">EEE Badminton League</h3>
+            <div class="activity-issuer">
+              <i class="fas fa-university"></i> Research Scholar Forum & EEE Forum, IIT Guwahati
+            </div>
+            <p class="activity-desc">
+              Certificate of Participation for competing in the annual EEE Badminton League sports championship at IIT Guwahati (6–7 April 2024).
+            </p>
+          </div>
+        </div>
+
+        <!-- 2. Research & Industrial Conclave Volunteer -->
+        <div class="glass-card tilt-card activity-card" data-category="activities">
+          <div class="activity-card-header">
+            <div class="activity-icon-box activity-icon-activity">
+              <i class="fas fa-palette"></i>
+            </div>
+            <div class="activity-badges">
+              <span class="activity-type-badge badge-activity">Volunteering</span>
+              <span class="activity-date-badge"><i class="far fa-calendar-alt"></i> May 2023</span>
+            </div>
+          </div>
+          <div class="activity-card-body">
+            <h3 class="activity-title">Research & Industrial Conclave (Integration 2023)</h3>
+            <div class="activity-issuer">
+              <i class="fas fa-university"></i> IIT Guwahati
+            </div>
+            <p class="activity-desc">
+              Certificate of Appreciation awarded as a volunteer contributing to the Rangoli Making & Creative Team at Research & Industrial Conclave – Integration 2023 (14–16 May 2023).
+            </p>
+          </div>
+        </div>
+
+        <!-- 3. Yuva Sangam Volunteer -->
+        <div class="glass-card tilt-card activity-card" data-category="activities">
+          <div class="activity-card-header">
+            <div class="activity-icon-box activity-icon-activity">
+              <i class="fas fa-hands-helping"></i>
+            </div>
+            <div class="activity-badges">
+              <span class="activity-type-badge badge-activity">Volunteering</span>
+              <span class="activity-date-badge"><i class="far fa-calendar-alt"></i> Feb–Mar 2023</span>
+            </div>
+          </div>
+          <div class="activity-card-body">
+            <h3 class="activity-title">Yuva Sangam Youth Exchange Programme</h3>
+            <div class="activity-issuer">
+              <i class="fas fa-university"></i> IIT Guwahati (Ministry of Education)
+            </div>
+            <p class="activity-desc">
+              Certificate of Appreciation for active volunteering during the nationwide Yuva Sangam youth exchange initiative under the Ek Bharat Shreshtha Bharat mission.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4. Advanced Certification in Data Science -->
+        <div class="glass-card tilt-card activity-card" data-category="certifications">
+          <div class="activity-card-header">
+            <div class="activity-icon-box activity-icon-cert">
+              <i class="fas fa-brain"></i>
+            </div>
+            <div class="activity-badges">
+              <span class="activity-type-badge badge-cert">Certification</span>
+              <span class="activity-date-badge"><i class="far fa-calendar-alt"></i> Dec 2022–Mar 2023</span>
+            </div>
+          </div>
+          <div class="activity-card-body">
+            <h3 class="activity-title">Advanced Certification Programme in Data Science</h3>
+            <div class="activity-issuer">
+              <i class="fas fa-certificate"></i> Electronics & ICT Academy, IIT Guwahati
+            </div>
+            <p class="activity-desc">
+              Certificate of Appreciation for successfully completing the advanced certification programme covering data science methodologies, predictive analytics, and machine learning foundations.
+            </p>
+          </div>
+        </div>
+
+        <!-- 5. IoT & Wireless Sensor Network Training -->
+        <div class="glass-card tilt-card activity-card" data-category="certifications">
+          <div class="activity-card-header">
+            <div class="activity-icon-box activity-icon-cert">
+              <i class="fas fa-microchip"></i>
+            </div>
+            <div class="activity-badges">
+              <span class="activity-type-badge badge-cert">Hands-on Training</span>
+              <span class="activity-date-badge"><i class="far fa-calendar-alt"></i> Oct 2019</span>
+            </div>
+          </div>
+          <div class="activity-card-body">
+            <h3 class="activity-title">Internet of Things (IoT) & Wireless Sensor Network</h3>
+            <div class="activity-issuer">
+              <i class="fas fa-building"></i> Texas Instruments, STEPS & NIT Jalandhar
+            </div>
+            <p class="activity-desc">
+              Hands-on technical training covering IoT system design, microcontroller interfacing, wireless sensor nodes, and real-time sensor network protocols (20–24 October 2019).
+            </p>
+          </div>
+        </div>
+
+        <!-- 6. Emerging Trends in Cyber Security Workshop -->
+        <div class="glass-card tilt-card activity-card" data-category="workshops">
+          <div class="activity-card-header">
+            <div class="activity-icon-box activity-icon-workshop">
+              <i class="fas fa-shield-halved"></i>
+            </div>
+            <div class="activity-badges">
+              <span class="activity-type-badge badge-workshop">Workshop</span>
+              <span class="activity-date-badge"><i class="far fa-calendar-alt"></i> Sep 2019</span>
+            </div>
+          </div>
+          <div class="activity-card-body">
+            <h3 class="activity-title">Emerging Trends in Cyber Security</h3>
+            <div class="activity-issuer">
+              <i class="fas fa-university"></i> Department of CSE, Dr. B. R. Ambedkar NIT Jalandhar
+            </div>
+            <p class="activity-desc">
+              Participated in a specialized workshop examining modern cryptographic algorithms, cyber threat vectors, software vulnerabilities, and state-of-the-art defensive protocols (10 September 2019).
+            </p>
+          </div>
+        </div>
+
+        <!-- 7. Java Training & Development -->
+        <div class="glass-card tilt-card activity-card" data-category="certifications">
+          <div class="activity-card-header">
+            <div class="activity-icon-box activity-icon-cert">
+              <i class="fab fa-java"></i>
+            </div>
+            <div class="activity-badges">
+              <span class="activity-type-badge badge-cert">Technical Training</span>
+              <span class="activity-date-badge"><i class="far fa-calendar-alt"></i> Mar 2018</span>
+            </div>
+          </div>
+          <div class="activity-card-body">
+            <h3 class="activity-title">Java Training & Software Development</h3>
+            <div class="activity-issuer">
+              <i class="fas fa-code"></i> JSpiders
+            </div>
+            <p class="activity-desc">
+              Extensive software development curriculum covering Core Java, J2EE architectures, relational database management with SQL, web application frameworks, and engineering best practices.
+            </p>
+          </div>
+        </div>
+
+        <!-- 8. Enterprise Java, SQL & Servlets -->
+        <div class="glass-card tilt-card activity-card" data-category="certifications">
+          <div class="activity-card-header">
+            <div class="activity-icon-box activity-icon-cert">
+              <i class="fas fa-database"></i>
+            </div>
+            <div class="activity-badges">
+              <span class="activity-type-badge badge-cert">Technical Training</span>
+              <span class="activity-date-badge"><i class="far fa-calendar-alt"></i> Aug–Nov 2016</span>
+            </div>
+          </div>
+          <div class="activity-card-body">
+            <h3 class="activity-title">Enterprise Java & Database Engineering</h3>
+            <div class="activity-issuer">
+              <i class="fas fa-code"></i> CourseCube
+            </div>
+            <p class="activity-desc">
+              Intensive training covering SQL, PL/SQL stored procedures, Core Java OOP, JDBC drivers, Servlets, and JSP server-side components for enterprise application development.
+            </p>
+          </div>
+        </div>
+
+        <!-- 9. Network Management & Web Development -->
+        <div class="glass-card tilt-card activity-card" data-category="certifications">
+          <div class="activity-card-header">
+            <div class="activity-icon-box activity-icon-cert">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <div class="activity-badges">
+              <span class="activity-type-badge badge-cert">Industrial Training</span>
+              <span class="activity-date-badge"><i class="far fa-calendar-alt"></i> Jun–Jul 2015</span>
+            </div>
+          </div>
+          <div class="activity-card-body">
+            <h3 class="activity-title">Network Management & Web Development</h3>
+            <div class="activity-issuer">
+              <i class="fas fa-building"></i> Netcamp Solutions & LNMIIT Jaipur
+            </div>
+            <p class="activity-desc">
+              Industrial training focused on network administration, server configuration, Linux system management, and dynamic web application development.
+            </p>
+          </div>
+        </div>
+
+        <!-- 10. Android App Development CETPA -->
+        <div class="glass-card tilt-card activity-card" data-category="certifications">
+          <div class="activity-card-header">
+            <div class="activity-icon-box activity-icon-cert">
+              <i class="fab fa-android"></i>
+            </div>
+            <div class="activity-badges">
+              <span class="activity-type-badge badge-cert">Technical Training</span>
+              <span class="activity-date-badge"><i class="far fa-calendar-alt"></i> Jul 2015</span>
+            </div>
+          </div>
+          <div class="activity-card-body">
+            <h3 class="activity-title">Android Application Development</h3>
+            <div class="activity-issuer">
+              <i class="fas fa-building"></i> CETPA Infotech Pvt. Ltd., Lucknow
+            </div>
+            <p class="activity-desc">
+              Hands-on mobile engineering program covering native Android application architecture, activity lifecycles, user experience layouts, SQLite, and mobile SDKs (2–29 July 2015).
+            </p>
+          </div>
+        </div>
+
+        <!-- 11. Networking Technologies -->
+        <div class="glass-card tilt-card activity-card" data-category="certifications">
+          <div class="activity-card-header">
+            <div class="activity-icon-box activity-icon-cert">
+              <i class="fas fa-server"></i>
+            </div>
+            <div class="activity-badges">
+              <span class="activity-type-badge badge-cert">Industrial Training</span>
+              <span class="activity-date-badge"><i class="far fa-calendar-alt"></i> Jun–Jul 2015</span>
+            </div>
+          </div>
+          <div class="activity-card-body">
+            <h3 class="activity-title">Networking Technologies</h3>
+            <div class="activity-issuer">
+              <i class="fas fa-building"></i> Netcamp Solutions & LNMIIT Jaipur
+            </div>
+            <p class="activity-desc">
+              Industrial training in enterprise networking technologies, routing protocols, switching architectures, subnetting, and network security foundations.
+            </p>
+          </div>
+        </div>
+
+        <!-- 12. Android with Core Java eSoft -->
+        <div class="glass-card tilt-card activity-card" data-category="certifications">
+          <div class="activity-card-header">
+            <div class="activity-icon-box activity-icon-cert">
+              <i class="fas fa-mobile-screen-button"></i>
+            </div>
+            <div class="activity-badges">
+              <span class="activity-type-badge badge-cert">Technical Training</span>
+              <span class="activity-date-badge"><i class="far fa-calendar-alt"></i> Jun–Jul 2015</span>
+            </div>
+          </div>
+          <div class="activity-card-body">
+            <h3 class="activity-title">Android with Core Java Training</h3>
+            <div class="activity-issuer">
+              <i class="fas fa-code"></i> eSoft Connect
+            </div>
+            <p class="activity-desc">
+              Foundational software engineering training combining core object-oriented Java programming with mobile app layout design and Android component lifecycles.
+            </p>
+          </div>
+        </div>
+
+        <!-- 13. Be-Secure Information Security Workshop -->
+        <div class="glass-card tilt-card activity-card" data-category="workshops">
+          <div class="activity-card-header">
+            <div class="activity-icon-box activity-icon-workshop">
+              <i class="fas fa-lock"></i>
+            </div>
+            <div class="activity-badges">
+              <span class="activity-type-badge badge-workshop">Workshop</span>
+              <span class="activity-date-badge"><i class="far fa-calendar-alt"></i> Feb 2013</span>
+            </div>
+          </div>
+          <div class="activity-card-body">
+            <h3 class="activity-title">Be-Secure Information Security Workshop</h3>
+            <div class="activity-issuer">
+              <i class="fas fa-shield-alt"></i> DOEACC Society, Gorakhpur Centre
+            </div>
+            <p class="activity-desc">
+              Hands-on cybersecurity awareness workshop focusing on data protection protocols, safe internet practices, identifying malicious vulnerabilities, and ethical computing (1 February 2013).
+            </p>
+          </div>
+        </div>
+
+        <!-- 14. 3D Animation & VFX Workshop -->
+        <div class="glass-card tilt-card activity-card" data-category="workshops">
+          <div class="activity-card-header">
+            <div class="activity-icon-box activity-icon-workshop">
+              <i class="fas fa-cube"></i>
+            </div>
+            <div class="activity-badges">
+              <span class="activity-type-badge badge-workshop">Workshop</span>
+              <span class="activity-date-badge"><i class="far fa-calendar-alt"></i> Nov 2012</span>
+            </div>
+          </div>
+          <div class="activity-card-body">
+            <h3 class="activity-title">Two-Day Workshop on 3D Animation & VFX</h3>
+            <div class="activity-issuer">
+              <i class="fas fa-film"></i> MAAC Kanpur in association with PSIT Kanpur
+            </div>
+            <p class="activity-desc">
+              Two-day immersive practical workshop covering 3D computer graphics, asset modeling principles, visual effects (VFX) compositing, lighting, and rendering pipelines.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Get in Touch</span>
+        <h2 class="section-title">Contact & Collaboration</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div>
+          <div class="glass-card">
+            <h3 class="card-title" style="margin-bottom: 1.5rem;">
+              <i class="fas fa-envelope-open-text card-icon"></i> Direct Channels
+            </h3>
+
+            <div class="contact-info-list">
+              <div class="contact-info-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <div class="contact-detail-title">Academic Email</div>
+                  <div class="contact-detail-val">s.pranjali@iitg.ac.in</div>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-icon">
+                  <i class="fas fa-building"></i>
+                </div>
+                <div>
+                  <div class="contact-detail-title">Office Location</div>
+                  <div class="contact-detail-val">AR/VR Lab, 4th Floor, Research Building, IIT Guwahati</div>
+                </div>
+              </div>
+            </div>
+
+            <h4 style="font-size: 0.95rem; margin-bottom: 1rem; color: var(--text-secondary);">Profiles & Networks</h4>
+            <div class="social-links">
+              <a href="https://scholar.google.com/citations?hl=en&user=PFTM6mYAAAAJ&view_op=list_works&sortby=pubdate"
+                class="social-icon-btn" target="_blank" aria-label="Google Scholar">
+                <i class="fas fa-graduation-cap"></i>
+              </a>
+              <a href="https://github.com/pranjali1996/" class="social-icon-btn" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/pranjali-singh-44161964" class="social-icon-btn" target="_blank"
+                aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <!-- <a href="https://twitter.com" class="social-icon-btn" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://arxiv.org" class="social-icon-btn" target="_blank" aria-label="arXiv">
+                <i class="fas fa-book"></i>
+              </a> -->
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <form id="contact-form" class="glass-card">
+            <h3 class="card-title" style="margin-bottom: 1.5rem;">Send a Message</h3>
+
+            <div class="form-group">
+              <label for="form-name" class="form-label">Your Name</label>
+              <input type="text" id="form-name" class="form-control" placeholder=" " required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-email" class="form-label">Your Email</label>
+              <input type="email" id="form-email" class="form-control" placeholder=" " required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-message" class="form-label">Message</label>
+              <textarea id="form-message" class="form-control" placeholder=" " required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary"
+              style="width: 100%; justify-content: center; margin-top: 0.5rem;">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BibTeX Modal Window -->
+  <div id="bibtex-modal" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 class="modal-title"><i class="fas fa-quote-left" style="color: var(--accent-primary);"></i> BibTeX Citation
+        </h3>
+        <button id="modal-close" class="modal-close-btn">&times;</button>
+      </div>
+      <div class="code-container">
+        <button id="copy-bibtex-btn" class="copy-btn">
+          <i class="fas fa-copy"></i> Copy BibTeX
+        </button>
+        <pre id="bibtex-code" class="code-content"></pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Pranjali Singh.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript Datasets & Logic -->
+  <script src="data/publications.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
